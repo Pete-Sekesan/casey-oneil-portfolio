@@ -128,6 +128,12 @@ font-size: var(--fs-h3);
    margin-bottom: 1em;
 }
 
+.section__subtitle--work {
+    color: var(var(--clr-light));
+    font-weight: var(--fw-bold);
+    margin-bottom: 1em;
+}
+
 /* Header */
 nav {display: none;}
 
@@ -273,6 +279,40 @@ margin: 0 auto;
 }
 
 
+/* My Work */
+.my-work {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    text-align: center;
+
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(300px, 1fr))
+}
+
+.portfolio__item {
+    background-color: var(--clr-accent);
+    overflow: hidden;
+
+}
+
+.portfolio__img {
+    transition: transform 750ms cubic-bezier(.5, 0, .5, 1),
+    opacity 250ms linear;
+}
+
+.portfolio__item:focus {
+    position: relative;
+    z-index: 2;
+}
+
+.portfolio__img:hover,
+.portfolio__item:focus .portfolio__img {
+    transform: scale(1.2);
+    opacity: .75;
+}
 
 /*
 font-family: 'Lato', sans-serif;
