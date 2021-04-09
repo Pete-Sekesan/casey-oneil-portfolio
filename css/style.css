@@ -141,6 +141,7 @@ font-size: var(--fs-h3);
 /* Header */
 
 header {
+    
     display: flex;
     justify-content: space-between;
     padding: 1em;
